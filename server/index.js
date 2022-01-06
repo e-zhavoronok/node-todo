@@ -38,7 +38,7 @@ app.get("/todos/:id", async (req, res) => {
 
         res.json(todo.rows[0]);
     } catch (err) {
-        console.error(err.messge);
+        console.error(err.message);
     }
 })
 
@@ -65,7 +65,7 @@ app.delete("/todos/:id", async (req, res) => {
             [id]
         );
 
-        res.json(todo.rows[0]);
+        res.json("Todo was deleted!");
     } catch (err) {
         console.error(err.messge);
     }
